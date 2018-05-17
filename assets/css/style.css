@@ -5,6 +5,10 @@
     color: #777;
 }
 
+.wrapper {
+    width: 95%;
+    margin: 0 auto 50px 25px;
+}
 .centerContent{margin: 0 auto;}
 .nav{padding: 20px;}  
 .attention{font-size: 2em; font-weight: bold; margin: auto 25px;}
@@ -56,31 +60,35 @@ nav .logo{
 .content hr{
     margin: 15px 25px;
 }
-.content{
-    max-width: 910px;
-    margin: 20px auto 10px auto;
-}
 .content-stuff{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin: auto 25px 100px 25px;
 }
+.content-margin{
+    margin: 0 25px;
+}
 
 /* aboutme styles */
 .aboutme{margin: 15px 0px auto 25px;}    
 .bio p{
-    width: 840px;
     position: relative;
-    left: 20px;
+    margin: 10px;
 }
 .bio-more p{
-    width: 860px;
     margin: 15px 0px;
 }
+p:before {
+    content: "";
+    width: 10em;
+    display: block;
+    overflow: hidden;
+  }
 .profilepic{
-    height: 200px;
-    width: 200px;
+    max-width:100%;
+    height:auto;
+    max-height: 300px;
     float: left;
     border-radius: 50%;
 }
@@ -178,4 +186,14 @@ h1, h2, h3, h4{font-family: 'Georgia', Times, 'Times New Roman', serif;}
 .header-border{border-color: #ccc;}
 .content-border{border:2px solid #ddd;}
 .footer-BG{background-color: #666; color: #fff}
-.recommendedWidth{width: 960px;}
+
+/* media queries */
+@media (max-width: 980px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 640px) {
+
+}
